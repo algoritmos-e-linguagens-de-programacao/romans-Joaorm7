@@ -46,9 +46,3 @@ def romano_para_inteiro(romano):
         valor_anterior = valor_atual
 
     return total
-
-print(romano_para_inteiro('III'))     
-print(romano_para_inteiro('IV'))      
-print(romano_para_inteiro('IX'))      
-print(romano_para_inteiro('LVIII'))   
-print(romano_para_inteiro('MCMXCI')) 
