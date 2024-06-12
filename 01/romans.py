@@ -37,12 +37,12 @@ def romano_para_inteiro(romano):
 
 
         if valor_atual < valor_anterior:
-            total -= valor_atual
+            final -= valor_atual
         else:
 
-            total += valor_atual
+            final += valor_atual
 
 
         valor_anterior = valor_atual
 
-    return total
+    return final
