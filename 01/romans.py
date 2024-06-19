@@ -12,7 +12,6 @@ def int_to_roman(num):
     traducao = milhar[num2] + centena[num3] + dezena[num4] + unidade[num5]
 
     return traducao
-
 pass
 
 def roman_to_int(s):
@@ -29,7 +28,7 @@ def roman_to_int(s):
     total = 0
     valor_anterior = 0
 
-    for letra in romano[::-1]:
+    for letra in s[::-1]:
         valor_atual = valores[letra]
 
         if valor_atual < valor_anterior:
@@ -40,5 +39,4 @@ def roman_to_int(s):
         valor_anterior = valor_atual
 
     return total
-
-    pass
+pass
