@@ -13,8 +13,9 @@ def int_to_roman(num):
 
     return traducao
 
+pass
+
 def roman_to_int(s):
-   def romano_para_inteiro(romano):
     valores = {
         'I': 1,
         'V': 5,
