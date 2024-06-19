@@ -14,9 +14,7 @@ def int_to_roman(num):
 
     return traducao
 
-def romano_para_inteiro(romano):
-
-    valores = {
+valores = {
         'I': 1,
         'V': 5,
         'X': 10,
@@ -26,23 +24,18 @@ def romano_para_inteiro(romano):
         'M': 1000
     }
 
-
+   
     total = 0
     valor_anterior = 0
 
-
     for letra in romano[::-1]:
-
         valor_atual = valores[letra]
 
-
         if valor_atual < valor_anterior:
-            final -= valor_atual
+            total -= valor_atual
         else:
-
-            final += valor_atual
-
+            total += valor_atual
 
         valor_anterior = valor_atual
 
-    return final
+    return total
